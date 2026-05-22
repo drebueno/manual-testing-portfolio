@@ -34,7 +34,7 @@ Média
 
 ---
 
-## 🐞 BUG-002 — Validação inconsistente do campo "Nome" no cadastro
+BUG 002 - Validação inconsistente do campo "Nome" no cadastro
 
 **Descrição:**  
 O sistema apresenta comportamentos diferentes na validação do campo "Nome". Inicialmente, não exibe erro para o campo vazio, mas após preencher outros campos, a validação ocorre de forma diferente, exibindo mensagem em formato de modal.
