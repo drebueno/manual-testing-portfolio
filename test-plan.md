@@ -4,7 +4,7 @@
 
 ---
 
-TC-01  — Novo registro com campos válidos
+TC-01 — Novo registro com campos válidos
 
 **Pré-condição:**
 Usuário não cadastrado no sistema
@@ -29,7 +29,7 @@ Aprovado
 
 ---
 
-TC-02  — Novo registro com campos válidos
+TC-02 — Novo registro com campos válidos
 
 **Pré-condição:**
 Usuário não cadastrado no sistema
@@ -52,3 +52,23 @@ Usuário foi cadastrado corretamente na plataforma
 **Status:**
 Aprovado
 
+TC - 03 — Registro com dados já utilizados
+
+**Pré-condição:**
+Usuário já cadastrado no sistema
+
+**Passos:**
+1. Acessar a tela de registro  
+2. Preencher todos os campos obrigatórios  
+3. Realizar cadastro com sucesso  
+4. Retornar à tela de registro  
+5. Submeter novamente os mesmos dados  
+
+**Resultado esperado:**
+Sistema não deve permitir cadastro duplicado ou deve exigir novos dados
+
+**Resultado atual:**
+Sistema permite novo cadastro com os mesmos dados
+
+**Status:**
+Reprovado (BUG-001)
