@@ -72,3 +72,26 @@ Sistema permite novo cadastro com os mesmos dados
 
 **Status:**
 Reprovado (BUG-001)
+
+---
+
+TC - 04 — Validação do campo "Nome" obrigatório
+
+**Pré-condição:**
+Nenhuma
+
+**Passos:**
+1. Acessar a tela de registro  
+2. Clicar em "Registrar" sem preencher os campos  
+3. Preencher "Email", "Senha" e "Confirmar senha"  
+4. Deixar o campo "Nome" vazio  
+5. Clicar em "Registrar"  
+
+**Resultado esperado:**
+Sistema deve exibir mensagem de erro abaixo do campo "Nome"
+
+**Resultado atual:**
+Sistema não valida inicialmente e depois exibe erro em formato de modal
+
+**Status:**
+Reprovado (BUG-002)
