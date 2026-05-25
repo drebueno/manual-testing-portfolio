@@ -122,3 +122,28 @@ Sistema permitiu o cadastro de um novo usuário utilizando um e-mail já cadastr
 
 **Status:**
 Reprovado (Bug 003)
+
+---
+
+TC-06 — Registro com formato de e-mail inválido
+
+**Pré-condição:**
+Nenhuma
+
+**Passos:**
+1. Acessar a página de login  
+2. Clicar no botão "Registrar"  
+3. Inserir um e-mail em formato inválido (ex: teste@ ou teste.com)  
+4. Inserir nome válido  
+5. Inserir senha válida  
+6. Confirmar a senha corretamente  
+7. Clicar no botão "Cadastrar"  
+
+**Resultado esperado:**
+Sistema deve impedir o cadastro e exibir mensagem informando que o e-mail é inválido  
+
+**Resultado atual:**
+Sistema permitiu o cadastro com e-mail em formato inválido, desde que contenha o caractere "@"
+
+**Status:**
+Reprovado (BUG-004)
