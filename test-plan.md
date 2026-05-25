@@ -150,7 +150,7 @@ Reprovado (BUG-004)
 
 ---
 
-TC-05 — Registro com espaços em branco nos campos
+TC-07 — Registro com espaços em branco nos campos
 
 **Pré-condição:**
 Nenhuma
@@ -172,3 +172,28 @@ Sistema permitiu o cadastro com o campo "Nome" preenchido apenas com espaços
 
 **Status:**
 Reprovado (BUG-005)
+
+---
+
+TC-08 — Registro com senha contendo apenas espaços
+
+**Pré-condição:**
+Nenhuma
+
+**Passos:**
+1. Acessar a página de login  
+2. Clicar no botão "Registrar"  
+3. Inserir e-mail válido  
+4. Inserir nome válido  
+5. Inserir apenas espaços no campo "Senha" (ex: "     ")  
+6. Inserir apenas espaços no campo "Confirmar senha"  
+7. Clicar no botão "Cadastrar"  
+
+**Resultado esperado:**
+Sistema deve impedir o cadastro e exibir mensagem informando que a senha é inválida ou não pode conter apenas espaços  
+
+**Resultado atual:**
+Sistema permitiu o cadastro com senha composta apenas por espaços, desde que os campos coincidam
+
+**Status:**
+Reprovado (BUG-006)
