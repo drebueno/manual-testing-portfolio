@@ -147,3 +147,28 @@ Sistema permitiu o cadastro com e-mail em formato inválido, desde que contenha 
 
 **Status:**
 Reprovado (BUG-004)
+
+---
+
+TC-05 — Registro com espaços em branco nos campos
+
+**Pré-condição:**
+Nenhuma
+
+**Passos:**
+1. Acessar a página de login  
+2. Clicar no botão "Registrar"  
+3. Inserir e-mail com espaços antes e depois (ex: "   teste@email.com   ")  
+4. Inserir nome com espaços (ex: "   Andressa   ")  
+5. Inserir senha válida  
+6. Confirmar a senha corretamente  
+7. Clicar no botão "Cadastrar"  
+
+**Resultado esperado:**
+Sistema deve remover os espaços automaticamente ou impedir o cadastro com dados inválidos  
+
+**Resultado atual:**
+Sistema permitiu o cadastro com o campo "Nome" preenchido apenas com espaços
+
+**Status:**
+Reprovado (BUG-005)
