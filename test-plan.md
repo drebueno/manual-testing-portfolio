@@ -197,3 +197,23 @@ Sistema permitiu o cadastro com senha composta apenas por espaços, desde que os
 
 **Status:**
 Reprovado (BUG-006)
+
+TC-09 — Login com usuário cadastrado com senha inválida
+
+**Pré-condição:**
+Usuário cadastrado com senha contendo apenas espaços
+
+**Passos:**
+1. Acessar a página de login  
+2. Inserir e-mail cadastrado  
+3. Inserir senha contendo apenas espaços  
+4. Clicar em "Entrar"  
+
+**Resultado esperado:**
+Sistema não deve permitir login com credenciais inválidas  
+
+**Resultado atual:**
+Sistema permitiu autenticação com senha composta apenas por espaços
+
+**Status:**
+Reprovado (BUG-007)
