@@ -1,4 +1,4 @@
-# 📋 Test Cases
+# 📋 Test Plan
 
 ## 🧪 Funcionalidade: Login
 
@@ -29,30 +29,7 @@ Aprovado
 
 ---
 
-TC-02 — Novo registro com campos válidos
-
-**Pré-condição:**
-Usuário não cadastrado no sistema
-
-**Passos:**
-1. Acessar a página de login
-2. Clicar no botão "Registrar"
-3. Inserir e-mail válido
-4. Inserir nome válido
-5. Inserir senha válida
-6. Inserir senha válida para confirmação
-7. Clicar no botão "Cadastrar"
-
-**Resultado esperado:**
-Usuário deve ser cadastrado corretamente 
-
-**Resultado atual:**
-Usuário foi cadastrado corretamente na plataforma
-
-**Status:**
-Aprovado
-
-TC - 03 — Registro com dados já utilizados
+TC - 02 — Registro com dados já utilizados
 
 **Pré-condição:**
 Usuário já cadastrado no sistema
@@ -75,7 +52,7 @@ Reprovado (BUG-001)
 
 ---
 
-TC - 04 — Validação do campo "Nome" obrigatório
+TC - 03 — Validação do campo "Nome" obrigatório
 
 **Pré-condição:**
 Nenhuma
@@ -95,3 +72,53 @@ Sistema não valida inicialmente e depois exibe erro em formato de modal
 
 **Status:**
 Reprovado (BUG-002)
+
+---
+
+TC-04 — Registro com senha diferente da confirmação
+
+**Pré-condição:**
+Usuário não cadastrado no sistema
+
+**Passos:**
+1. Acessar a página de login  
+2. Clicar no botão "Registrar"  
+3. Inserir e-mail válido  
+4. Inserir nome válido  
+5. Inserir senha válida  
+6. Inserir uma senha diferente no campo de confirmação  
+7. Clicar no botão "Cadastrar"  
+
+**Resultado esperado:**
+Sistema deve impedir o cadastro e exibir mensagem informando que as senhas não coincidem
+
+**Resultado atual:**
+Sistema bloqueia o cadastro e exibe mensagem informando divergência entre as senhas
+
+**Status:**
+Aprovado
+
+---
+
+TC-05 — Registro com e-mail já cadastrado
+
+**Pré-condição:**
+Usuário já cadastrado no sistema
+
+**Passos:**
+1. Acessar a página de login  
+2. Clicar no botão "Registrar"  
+3. Inserir um e-mail já cadastrado  
+4. Inserir nome válido  
+5. Inserir senha válida  
+6. Confirmar a senha corretamente  
+7. Clicar no botão "Cadastrar"  
+
+**Resultado esperado:**
+Sistema deve impedir o cadastro e exibir mensagem informando que o e-mail já está em uso
+
+**Resultado atual:**
+Sistema permitiu o cadastro de um novo usuário utilizando um e-mail já cadastrado, sem exibir mensagem de erro ou bloqueio
+
+**Status:**
+Reprovado (Bug 003)
