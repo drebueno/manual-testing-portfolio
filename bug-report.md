@@ -112,4 +112,34 @@ Média
 
 ---
 
+BUG-005 — Permite cadastro com campo "Nome" contendo apenas espaços
+
+**Descrição:**  
+O sistema permite o cadastro de usuário quando o campo "Nome" é preenchido apenas com espaços em branco, sem validar corretamente o conteúdo inserido.
+
+**Passos para reproduzir:**
+1. Acessar a página de login  
+2. Clicar no botão "Registrar"  
+3. Inserir e-mail válido  
+4. Inserir apenas espaços no campo "Nome" (ex: "     ")  
+5. Inserir senha válida  
+6. Confirmar a senha corretamente  
+7. Clicar no botão "Cadastrar"  
+
+**Resultado esperado:**  
+O sistema deve impedir o cadastro e exibir mensagem informando que o campo "Nome" é obrigatório e não pode conter apenas espaços  
+
+**Resultado atual:**  
+O sistema permite o cadastro mesmo com o campo "Nome" preenchido apenas com espaços em branco  
+
+**Prioridade:**  
+Média  
+
+**Impacto:**  
+- Cadastro de dados inválidos na base  
+- Comprometimento da qualidade das informações  
+- Possíveis problemas em funcionalidades que utilizam o nome do usuário  
+
+---
+
 
