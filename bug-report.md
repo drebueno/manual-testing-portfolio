@@ -142,4 +142,34 @@ Média
 
 ---
 
+BUG-006 — Permite cadastro com senha contendo apenas espaços
+
+**Descrição:**  
+O sistema permite o cadastro de usuários com senha composta apenas por espaços em branco, desde que os campos "Senha" e "Confirmar senha" sejam idênticos.
+
+**Passos para reproduzir:**
+1. Acessar a página de login  
+2. Clicar no botão "Registrar"  
+3. Inserir e-mail válido  
+4. Inserir nome válido  
+5. Inserir apenas espaços no campo "Senha" (ex: "     ")  
+6. Inserir a mesma quantidade de espaços no campo "Confirmar senha"  
+7. Clicar no botão "Cadastrar"  
+
+**Resultado esperado:**  
+O sistema deve impedir o cadastro e exibir mensagem informando que a senha é inválida ou não pode conter apenas espaços  
+
+**Resultado atual:**  
+O sistema permite o cadastro com senha composta apenas por espaços, desde que os campos coincidam  
+
+**Prioridade:**  
+Alta  
+
+**Impacto:**  
+- Criação de contas com credenciais inválidas  
+- Falha de segurança  
+- Comprometimento da autenticação do sistema  
+
+---
+
 
