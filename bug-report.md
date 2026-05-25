@@ -84,3 +84,32 @@ Alta
 
 ---
 
+BUG-004 — Validação incorreta de formato de e-mail no cadastro
+
+**Descrição:**  
+O sistema aceita e-mails em formato inválido durante o cadastro, desde que contenham o caractere "@", sem validar corretamente a estrutura completa do e-mail.
+
+**Passos para reproduzir:**
+1. Acessar a página de login  
+2. Clicar no botão "Registrar"  
+3. Inserir um e-mail inválido (ex: teste@ ou @email.com)  
+4. Preencher os demais campos corretamente  
+5. Clicar no botão "Cadastrar"  
+
+**Resultado esperado:**  
+O sistema deve validar o formato completo do e-mail e impedir o cadastro com dados inválidos, exibindo mensagem de erro  
+
+**Resultado atual:**  
+O sistema permite o cadastro com e-mails inválidos, desde que contenham o caractere "@"  
+
+**Prioridade:**  
+Média  
+
+**Impacto:**  
+- Cadastro de dados inválidos na base  
+- Possível falha na comunicação com o usuário (ex: envio de e-mails)  
+- Baixa qualidade dos dados cadastrados  
+
+---
+
+
