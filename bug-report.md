@@ -1,4 +1,4 @@
-🐞 **Bugs encontrados**
+🐞 Bugs Encontrados
 
 ---
 
