@@ -1,4 +1,4 @@
-🐞 Bugs encontrados
+🐞 **Bugs encontrados**
 
 ---
 
@@ -55,4 +55,32 @@ Média
 - Falta de padronização nas mensagens de erro  
 
 ---
- 
+ ## 🐞 BUG-003 — Permite cadastro com e-mail já cadastrado
+
+**Descrição:**  
+O sistema permite o cadastro de múltiplas contas utilizando o mesmo e-mail, sem apresentar qualquer validação ou bloqueio.
+
+**Passos para reproduzir:**
+1. Acessar a tela de registro  
+2. Realizar cadastro com um e-mail válido  
+3. Retornar à tela de registro  
+4. Inserir o mesmo e-mail já cadastrado  
+5. Preencher os demais campos corretamente  
+6. Clicar em "Cadastrar"  
+
+**Resultado esperado:**  
+O sistema deve impedir o cadastro e exibir mensagem informando que o e-mail já está em uso  
+
+**Resultado atual:**  
+O sistema permite o cadastro com o mesmo e-mail, sem apresentar validação  
+
+**Prioridade:**  
+Alta  
+
+**Impacto:**  
+- Duplicidade de contas  
+- Inconsistência na base de dados  
+- Possível falha de segurança  
+
+---
+
