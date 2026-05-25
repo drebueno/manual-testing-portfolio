@@ -1,4 +1,4 @@
-🐞 Bugs Encontrados
+🐞 ##Bugs Encontrados
 
 ---
 
@@ -55,7 +55,7 @@ Média
 - Falta de padronização nas mensagens de erro  
 
 ---
- ## 🐞 BUG-003 — Permite cadastro com e-mail já cadastrado
+ BUG-003 — Permite cadastro com e-mail já cadastrado
 
 **Descrição:**  
 O sistema permite o cadastro de múltiplas contas utilizando o mesmo e-mail, sem apresentar qualquer validação ou bloqueio.
