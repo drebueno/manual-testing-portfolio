@@ -172,4 +172,32 @@ Alta
 
 ---
 
+BUG-007 — Permite autenticação com senha composta apenas por espaços
+
+**Descrição:**  
+O sistema permite que usuários se autentiquem utilizando uma senha composta apenas por espaços em branco, desde que essa senha tenha sido previamente cadastrada.
+
+**Pré-condição:**  
+Usuário cadastrado com senha contendo apenas espaços
+
+**Passos para reproduzir:**
+1. Acessar a tela de login  
+2. Inserir o e-mail do usuário cadastrado  
+3. Inserir senha composta apenas por espaços  
+4. Clicar em "Entrar"  
+
+**Resultado esperado:**  
+O sistema não deve permitir autenticação com credenciais inválidas e deve exibir mensagem de erro  
+
+**Resultado atual:**  
+O sistema permite login com senha composta apenas por espaços, autenticando o usuário normalmente  
+
+**Prioridade:**  
+Alta  
+
+**Impacto:**  
+- Falha grave de segurança  
+- Permite criação e acesso com credenciais inválidas  
+- Compromete a integridade do sistema de autenticação  
+
 
